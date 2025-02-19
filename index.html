@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Family Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Video Header */
+        .header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        #header-video {
+            position: absolute;
+            top: 100%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding-top: 150px;
+            text-shadow: 2px 2px 4px rgb(255, 255, 255);
+            
+        }
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .price {
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #253037c5;
+            
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <video autoplay muted loop id="header-video">
+            <source src="shoppingonline.mp4" type="video/mp4">
+            
+        </video>
+        <div class="header-content">
+            <h1>Welcome to Family General Store</h1>
+            <p>Your One-Stop Shop for Everyday Needs</p>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <section class="products">
+           
+            <div class="product-card">
+                <img src="cleaningdetergent.jpg" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <h3>Household Cleaner</h3>
+                    <p class="price">$12.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="cookingutensils.jpg" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <h3>Kitchen Utensils</h3>
+                    <p class="price">$9.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="whitetshirt.jpg" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <h3>White T-Shirt</h3>
+                    <p class="price">$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="red_dress.jpg" alt="Product 4" class="product-image">
+                <div class="product-info">
+                    <h3>Red Dress</h3>
+                    <p class="price">$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="bedsheets.jpg" alt="Product 5" class="product-image">
+                <div class="product-info">
+                    <h3>Bedsheets</h3>
+                    <p class="price">$14.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="barbiedreamhouse.jpg" alt="Product 6" class="product-image">
+                <div class="product-info">
+                    <h3>Barbie Dream House</h3>
+                    <p class="price">$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="racecar.jpg" alt="Product 7" class="product-image">
+                <div class="product-info">
+                    <h3>Toy Race Car</h3>
+                    <p class="price">$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="dogchow.jpg" alt="Product 8" class="product-image">
+                <div class="product-info">
+                    <h3>Purina Dog chow</h3>
+                    <p class="price">$9.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Family General Store | Contact: (592)709-3451 | <a href="familystore25@gmail.com"> Email: info@familygeneralstore.com</a> </p>
+    </footer>
+</body>
+</html>
